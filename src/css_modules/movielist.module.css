@@ -1,0 +1,15 @@
+@import url("./global.css");
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line{
+  border: 1px solid rgb(173, 172, 172);
+  width: 50%;
+  margin-bottom: 20px;
+}

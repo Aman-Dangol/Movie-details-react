@@ -7,12 +7,10 @@ export default function Form({ setData }) {
     e.preventDefault();
     let response = await fetch(`https://search.imdbot.workers.dev/?q=${input}`);
     const data = await response.json();
-    console.log(data.description);
     setData(data);
   }
   function inputUpdate(e) {
     setInput(e.target.value);
-    console.log(e.target.value);
   }
   return (
     <form>

@@ -1,0 +1,7 @@
+@import url("./global.css");
+
+.image {
+  min-width: 100px;
+  width: 15rem;
+  text-align: center;
+}
