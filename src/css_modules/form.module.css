@@ -16,10 +16,11 @@ form > input {
   width: 50%;
   border-radius: 4px;
   background-color: var(--secondary-color);
+  color: var(--highlight-color);
 }
 
 form > input::placeholder {
-  color: white;
+  color: var(--highlight-color);
 }
 
 form > button {
@@ -28,4 +29,5 @@ form > button {
   background-color: #2176ff;
   border-radius: 4px;
   cursor: pointer;
+  color: var(--highlight-color);
 }

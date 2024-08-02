@@ -1,10 +1,16 @@
 import styles from "../css_modules/form.module.css";
 import { useState } from "react";
 
-export default function Form() {
+export default function Form({ setData }) {
   const [input, setInput] = useState("");
-  function btnClick(e) {
+  async function btnClick(e) {
     e.preventDefault();
+    let response = await fetch(
+      "https://search.imdbot.workers.dev/?q=%22hero%22"
+    );
+    const data = await response.json();
+    console.log(data.description[0]);
+    setData(data);
   }
   function inputUpdate(e) {
     setInput(e.target.value);
