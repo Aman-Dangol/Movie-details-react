@@ -5,11 +5,9 @@ export default function Form({ setData }) {
   const [input, setInput] = useState("");
   async function btnClick(e) {
     e.preventDefault();
-    let response = await fetch(
-      "https://search.imdbot.workers.dev/?q=%22hero%22"
-    );
+    let response = await fetch(`https://search.imdbot.workers.dev/?q=${input}`);
     const data = await response.json();
-    console.log(data.description[0]);
+    console.log(data.description);
     setData(data);
   }
   function inputUpdate(e) {
