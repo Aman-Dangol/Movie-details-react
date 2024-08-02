@@ -5,7 +5,7 @@ export default function SingleMovie({ details }) {
   return (
     <div className={styles.container}>
       <Image source={details["#IMG_POSTER"]}></Image>
-      <MovieDetails title={details["#TITLE"]} year={details["#YEAR"]}></MovieDetails>
+      <MovieDetails url={details["#IMDB_URL"]} title={details["#TITLE"]} year={details["#YEAR"]}></MovieDetails>
     </div>
   );
 }
