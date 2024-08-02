@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Form from "./components/Form";
+import Movies from "./components/MovieList";
 import { useState } from "react";
 function App() {
   const [data, setData] = useState("");
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header></Header>
       <Form setData={setData}></Form>
+      {data ? <Movies data={data.description}></Movies> : ""}
     </>
   );
 }

@@ -10,7 +10,7 @@ form {
 
 form > input {
   margin: 12px;
-  padding: 3%;
+  padding: 1.5rem;
   outline: none;
   border: none;
   width: 50%;

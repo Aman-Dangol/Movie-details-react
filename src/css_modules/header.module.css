@@ -1,5 +1,5 @@
 @import url(./global.css);
-h1 {
+.header {
   text-align: center;
   background-color: #000080;
   color: #2176ff;
